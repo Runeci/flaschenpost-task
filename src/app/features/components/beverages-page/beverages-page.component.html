@@ -1,1 +1,8 @@
-<p>beverages-page works!</p>
+<div class="container">
+  <ng-container *ngFor="let beverage of beverages">
+    <app-beverages-detail-view
+      class="beverages-detail"
+      [beverage]="beverage"></app-beverages-detail-view>
+  </ng-container>
+</div>
+
