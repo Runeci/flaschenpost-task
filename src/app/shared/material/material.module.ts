@@ -6,18 +6,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 
 
-
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    MatCardModule,
-  ],
-  exports: [
-    MatCardModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatDividerModule,
-  ]
+    declarations: [],
+    imports: [
+        CommonModule,
+        MatCardModule,
+    ],
+    exports: [
+        MatCardModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatDividerModule,
+    ]
 })
-export class MaterialModule { }
+export class MaterialModule {
+}

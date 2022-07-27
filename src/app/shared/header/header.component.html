@@ -1,3 +1,11 @@
 <mat-toolbar class="header" color="primary">
-  <button mat-flat-button color="accent">Accent</button>
+    <button
+        class="header__view-btn"
+        mat-flat-button
+        color="accent"
+        (click)="changeViewMode()"
+    >
+        <mat-icon>{{ viewMode === viewM.Bottle ? 'images' : 'ballot' }}</mat-icon>
+        {{ viewMode | titlecase }} view
+    </button>
 </mat-toolbar>

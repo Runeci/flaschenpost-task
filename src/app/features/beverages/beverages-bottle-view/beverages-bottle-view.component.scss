@@ -1,0 +1,12 @@
+.beverages-bottle-view__card {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px 0 rgba(34, 60, 80, 0.2);
+}
+
+.beverages-bottle-view__img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

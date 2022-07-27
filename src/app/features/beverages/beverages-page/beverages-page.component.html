@@ -1,0 +1,18 @@
+<div class="beverages-page__container" [ngClass]="(viewMode$ | async) || ''">
+    <ng-container *ngFor="let beverage of (beverages$ | async)">
+        <ng-container [ngSwitch]="viewMode$ | async">
+            <app-beverages-detail-view
+                *ngSwitchCase="'detail'"
+                class="beverages-page__beverages-detail"
+                [beverage]="beverage"
+            ></app-beverages-detail-view>
+
+            <app-beverages-bottle-view
+                *ngSwitchCase="'bottle'"
+                class="beverages-page__beverages-bottle"
+                [beverage]="beverage"
+            ></app-beverages-bottle-view>
+        </ng-container>
+    </ng-container>
+</div>
+

@@ -1,0 +1,19 @@
+<mat-card class="beverages-detail-view__card">
+    <img class="beverages-detail-view__img"
+         [src]="beverage.articles[0].image"
+         [alt]="beverage.name"
+    >
+
+    <mat-card-content class="beverages-detail-view__content">
+        <mat-card-title>{{ beverage.name }}</mat-card-title>
+        <mat-divider></mat-divider>
+        <div class="beverages-detail-view__info">
+            <p class="beverages-detail-view__description">
+                {{ beverage.articles[0].shortDescription }} <br>
+                {{ beverage.articles[0].pricePerUnitText }} <br>
+                {{ beverage.brandName }}
+            </p>
+            <p class="beverages-detail-view__price">{{ beverage.articles[0].price | currency: 'EUR' }}</p>
+        </div>
+    </mat-card-content>
+</mat-card>

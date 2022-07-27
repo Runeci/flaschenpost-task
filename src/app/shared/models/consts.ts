@@ -1,1 +1,1 @@
-export const MOCK_API = 'https://flapotest.blob.core.windows.net/test/ProductData.json';
+export const DATA_API_URL = 'https://flapotest.blob.core.windows.net/test/ProductData.json';
