@@ -1,7 +1,7 @@
 # Exercise Task #9
 ## Application for the list of products
 
-###Deploy 
+### Deploy 
 * [Task #9](https://test-task9.netlify.app/)
 
 ### Run the task
