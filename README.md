@@ -5,8 +5,8 @@
 * [Task #9](https://test-task9.netlify.app/)
 
 ### Run the task
-
+In the project folder:
 1. npm install
-2. npm run serve
+2. npm run start
 
 
