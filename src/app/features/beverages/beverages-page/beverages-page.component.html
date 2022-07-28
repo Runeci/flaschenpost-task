@@ -1,18 +1,23 @@
-<div class="beverages-page__container" [ngClass]="(viewMode$ | async) || ''">
-    <ng-container *ngFor="let beverage of (beverages$ | async)">
-        <ng-container [ngSwitch]="viewMode$ | async">
-            <app-beverages-detail-view
-                *ngSwitchCase="'detail'"
-                class="beverages-page__beverages-detail"
-                [beverage]="beverage"
-            ></app-beverages-detail-view>
+<div class="beverages-page__container">
+    <app-filter></app-filter>
+    <div class="beverages-page__beverages" [ngClass]="viewMode || ''">
+        <ng-container
+            *ngFor="let beverage of beverages | beveragesFilter: filterSettings | beveragesSort: filterSettings">
+            <ng-container [ngSwitch]="viewMode">
+                <app-beverages-detail-view
+                    *ngSwitchCase="'detail'"
+                    class="beverages-page__beverages-detail"
+                    [beverage]="beverage"
+                ></app-beverages-detail-view>
 
-            <app-beverages-bottle-view
-                *ngSwitchCase="'bottle'"
-                class="beverages-page__beverages-bottle"
-                [beverage]="beverage"
-            ></app-beverages-bottle-view>
+                <app-beverages-bottle-view
+                    *ngSwitchCase="'bottle'"
+                    class="beverages-page__beverages-bottle"
+                    [beverage]="beverage"
+                ></app-beverages-bottle-view>
+            </ng-container>
         </ng-container>
-    </ng-container>
+    </div>
 </div>
+
 

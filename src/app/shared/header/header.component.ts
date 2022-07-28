@@ -34,7 +34,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
                 this.viewMode = ViewMode.Detail;
                 break;
         }
-        this.router.navigate([], { queryParams: { view: this.viewMode } });
+        this.router.navigate([], {
+            queryParams: { view: this.viewMode },
+            queryParamsHandling: 'merge',
+        });
     }
 
     public ngOnDestroy(): void {

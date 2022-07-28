@@ -1,3 +1,5 @@
+import { PriceSortDirection } from './enums';
+
 export interface Beverage {
     readonly id: number,
     readonly brandName: string,
@@ -13,4 +15,9 @@ interface Articles {
     readonly unit: string,
     readonly pricePerUnitText: string,
     readonly image: string,
+}
+
+export interface FilterSettings {
+    readonly priceSortDirection: PriceSortDirection | null,
+    readonly moreThanTwoEuro: boolean,
 }

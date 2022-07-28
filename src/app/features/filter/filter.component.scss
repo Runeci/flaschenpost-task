@@ -1,0 +1,17 @@
+.filter__container {
+    width: 100%;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgb(34 60 80 / 20%);
+}
+
+.filter__price-btn {
+    width: 90px;
+}

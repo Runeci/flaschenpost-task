@@ -1,0 +1,21 @@
+<div class="filter__container">
+    <button
+        class="filter__price-btn"
+        mat-flat-button
+        color="accent"
+        (click)="onPriceSort()"
+    >
+        Price
+        <mat-icon
+            *ngIf="priceIconMap[priceSortDirection]"
+        >
+            {{ priceIconMap[priceSortDirection] }}
+        </mat-icon>
+    </button>
+    <mat-slide-toggle
+        (change)="onPriceFilter()"
+        [(ngModel)]="isToggled"
+    >
+        More than 2€/Liter
+    </mat-slide-toggle>
+</div>
